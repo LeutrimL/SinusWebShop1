@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinusWebShop", "SinusWebShop\SinusWebShop\SinusWebShop.csproj", "{767DB53E-DBB6-4E80-8EF7-78A2463B9850}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinusWebShop.Client", "SinusWebShop\SinusWebShop.Client\SinusWebShop.Client.csproj", "{16C72152-E1BB-4D38-896F-C6BD82464246}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{767DB53E-DBB6-4E80-8EF7-78A2463B9850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767DB53E-DBB6-4E80-8EF7-78A2463B9850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767DB53E-DBB6-4E80-8EF7-78A2463B9850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767DB53E-DBB6-4E80-8EF7-78A2463B9850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C72152-E1BB-4D38-896F-C6BD82464246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C72152-E1BB-4D38-896F-C6BD82464246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C72152-E1BB-4D38-896F-C6BD82464246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C72152-E1BB-4D38-896F-C6BD82464246}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86F9C7B8-3DD2-49F2-83DD-FA7866AC0722}
+	EndGlobalSection
+EndGlobal

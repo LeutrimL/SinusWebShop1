@@ -1,0 +1,24 @@
+﻿@page "/"
+
+@inject ProductService ProductService
+
+@if (products == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    foreach (var product in products)
+    {
+        <p>@product.Title</p>
+    }
+}
+
+@code {
+    private List<Product> products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await ProductService.GetProductsAsync();
+    }
+}
