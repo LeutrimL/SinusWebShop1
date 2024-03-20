@@ -1,10 +1,10 @@
+using SinusWebShop.Client.Services;
 using SinusWebShop.Components;
-using SinusWebShop.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddHttpClient<ProductService>();
+builder.Services.AddHttpClient<IProductService, ProductService>();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();

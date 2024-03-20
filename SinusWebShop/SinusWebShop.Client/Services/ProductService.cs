@@ -9,6 +9,7 @@ namespace SinusWebShop.Client.Services
         public ProductService(HttpClient httpClient)
         {
             _httpClient = httpClient;
+            _httpClient.BaseAddress = new Uri("https://dummyjson.com/products");
         }
 
         public async Task<List<Product>> GetProductsAsync()
@@ -49,5 +50,8 @@ namespace SinusWebShop.Client.Services
                 return null;
             }
         }
+
+
+
     }
 }

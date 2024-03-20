@@ -6,21 +6,27 @@
 @attribute [StreamRendering]
 @rendermode InteractiveServer
 
-<h3>Products</h3>
+<h3>Produkter</h3>
+
+<p>
+    Typfilter: <input @bind="typeFilter" type="text" />
+    Prisfilter: <input @bind="priceFilter" type="number" step="0.01" />
+    <button @onclick="ApplyFilters">Tillämpa filter</button>
+</p>
 
 @if (filteredProducts == null)
 {
-    <p><em>Loading...</em></p>
+    <p><em>Laddar...</em></p>
 }
 else
 {
     <table class='table'>
         <thead>
             <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Category</th>
+                <th>Titel</th>
+                <th>Beskrivning</th>
+                <th>Pris</th>
+                <th>Kategori</th>
             </tr>
         </thead>
         <tbody>
@@ -46,5 +52,12 @@ else
     {
         await Task.Delay(500);
         filteredProducts = await ProductService.GetProductsAsync();
+    }
+
+    private void ApplyFilters()
+    {
+        filteredProducts = filteredProducts
+            .Where(p => p.Category.Contains(typeFilter) && p.Price <= priceFilter)
+            .ToList();
     }
 }

@@ -2,41 +2,28 @@
 @using SinusWebShop.Client.Models
 @using SinusWebShop.Client.Services
 @inject IProductService ProductService
-@inject NavigationManager NavigationManager
-@attribute [StreamRendering]
 @rendermode InteractiveServer
 
-<h1>Products</h1>
-
-<p>This component demonstrates showing product data.</p>
+<h3>Produkter</h3>
 
 @if (products == null)
 {
-    <p><em>Loading...</em></p>
+    <p><em>Laddar...</em></p>
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Category</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var product in products)
-            {
-                <tr>
-                    <td>@product.Title</td>
-                    <td>@product.Description</td>
-                    <td>@product.Price</td>
-                    <td>@product.Category</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    foreach (var product in products)
+    {
+        <div>
+            <h4>@product.Title</h4>
+            <p>@product.Description</p>
+            <p>Pris: @product.Price kr</p>
+            <p>Rabatt: @product.DiscountPercentage %</p>
+            <p>Betyg: @product.Rating</p>
+            <p>Märke: @product.Brand</p>
+            <p>Kategori: @product.Category</p>
+        </div>
+    }
 }
 
 @code {
@@ -44,8 +31,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        await Task.Delay(500);
         products = await ProductService.GetProductsAsync();
-
     }
 }
