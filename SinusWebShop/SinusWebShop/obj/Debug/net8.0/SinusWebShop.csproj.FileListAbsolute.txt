@@ -54,3 +54,4 @@ C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\Sinus
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop\obj\Debug\net8.0\SinusWebShop.pdb
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop\obj\Debug\net8.0\SinusWebShop.genruntimeconfig.cache
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop\obj\Debug\net8.0\ref\SinusWebShop.dll
+C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop\obj\Debug\net8.0\SinusWebShop.sourcelink.json

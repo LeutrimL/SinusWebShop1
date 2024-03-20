@@ -1,0 +1,54 @@
+﻿@page "/products"
+@using SinusWebShop.Client.Models
+@using SinusWebShop.Client.Services
+@inject IProductService ProductService
+@inject NavigationManager NavigationManager
+@attribute [StreamRendering]
+@rendermode InteractiveServer
+
+<h3>Products</h3>
+
+@if (filteredProducts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in filteredProducts)
+            {
+                <tr>
+                    <td>@product.Title</td>
+                    <td>@product.Description</td>
+                    <td>@product.Price</td>
+                    <td>@product.Category</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private string typeFilter;
+    private decimal priceFilter;
+    private List<Product> filteredProducts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Fetch products from ProductService
+        var products = await ProductService.GetProductsAsync();
+
+        // Set filteredProducts to all products initially
+        filteredProducts = products;
+    }
+}
+

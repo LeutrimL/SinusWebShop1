@@ -1,5 +1,5 @@
-using SinusWebShop;
 using SinusWebShop.Components;
+using SinusWebShop.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

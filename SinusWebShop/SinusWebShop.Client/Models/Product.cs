@@ -14,8 +14,6 @@
         public List<string> Images { get; set; }
 
 
-
-
     }
 
 }

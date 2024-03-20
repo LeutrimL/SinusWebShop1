@@ -1026,3 +1026,4 @@ C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\Sinus
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\refint\SinusWebShop.Client.dll
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\SinusWebShop.Client.pdb
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\ref\SinusWebShop.Client.dll
+C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\SinusWebShop.Client.sourcelink.json
