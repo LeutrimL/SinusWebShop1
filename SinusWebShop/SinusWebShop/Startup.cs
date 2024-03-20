@@ -8,11 +8,6 @@ namespace SinusWebShop
         {
             services.AddScoped<IProductService, ProductService>();
 
-            // Registrera en HTTP-klient för ProductService
-            services.AddHttpClient<IProductService, ProductService>(client =>
-            {
-                client.BaseAddress = new Uri("https://dummyjson.com");
-            });
         }
     }
 }

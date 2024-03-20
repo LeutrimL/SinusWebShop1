@@ -42,13 +42,10 @@ else
 @code {
     private List<Product> products;
 
-    [Inject]
-    private IProductService ProductService { get; set; }
-
     protected override async Task OnInitializedAsync()
     {
         await Task.Delay(500);
+        products = await ProductService.GetProductsAsync();
 
-        products = await ProductService.GetAllProductsAsync();
     }
 }

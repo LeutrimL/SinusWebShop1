@@ -22,8 +22,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Gentrit Limani/Desktop/Systemutveckling/SinusWebShop/SinusWebShop/SinusWebShop.Client/Pages/Cart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Gentrit Limani/Desktop/Systemutveckling/SinusWebShop/SinusWebShop/SinusWebShop.Client/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gentrit Limani/Desktop/Systemutveckling/SinusWebShop/SinusWebShop/SinusWebShop.Client/Pages/OrderConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJDb25maXJtYXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Gentrit Limani/Desktop/Systemutveckling/SinusWebShop/SinusWebShop/SinusWebShop.Client/Pages/Products.razor]

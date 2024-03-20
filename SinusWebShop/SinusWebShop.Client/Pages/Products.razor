@@ -44,11 +44,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        // Fetch products from ProductService
-        var products = await ProductService.GetProductsAsync();
-
-        // Set filteredProducts to all products initially
-        filteredProducts = products;
+        await Task.Delay(500);
+        filteredProducts = await ProductService.GetProductsAsync();
     }
 }
-
