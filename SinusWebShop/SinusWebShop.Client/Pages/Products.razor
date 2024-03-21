@@ -1,65 +1,70 @@
-﻿@page "/products"
+﻿@page "/products/{category}"
+@using Newtonsoft.Json
 @using SinusWebShop.Client.Models
 @using SinusWebShop.Client.Services
-@inject IProductService ProductService
+@inject HttpClient HttpClient
 @inject NavigationManager NavigationManager
-@attribute [StreamRendering]
-@rendermode InteractiveServer
+@inject ProductService ProductService
 
-<h3>Produkter</h3>
+<h3>Produkter i @Category</h3>
 
-<p>
-    Typfilter: <input @bind="typeFilter" type="text" />
-    Minsta pris: <input @bind="minPriceFilter" type="number" step="0.01" />
-    Högsta pris: <input @bind="maxPriceFilter" type="number" step="0.01" />
-    <button @onclick="ApplyFilters">Tillämpa filter</button>
-</p>
-
-@if (filteredProducts == null)
-{
-    <p><em>Laddar...</em></p>
-}
-else
-{
-    <table class='table'>
-        <thead>
-            <tr>
-                <th>Kategori</th>
-                <th>Titel</th>
-                <th>Beskrivning</th>
-                <th>Pris</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var product in filteredProducts)
-            {
-                <tr>
-                    <td>@product.Category</td>
-                    <td>@product.Title</td>
-                    <td>@product.Description</td>
-                    <td>@product.Price</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+<div class="product-grid">
+    @foreach (var product in ProductList)
+    {
+        <div class="product-item">
+            <img src="@product.Thumbnail" alt="@product.Title" />
+            <h4>@product.Title</h4>
+            <p>@product.Description</p>
+            <p>Pris: @product.Price kr</p>
+            <button @onclick="() => NavigateToProductDetails(product.Id ?? 0)">Visa detaljer</button> <!-- Här hanteras nullvärdet -->
+        </div>
+    }
+</div>
 
 @code {
-    private string typeFilter;
-    private decimal minPriceFilter;
-    private decimal maxPriceFilter;
-    private List<Product> filteredProducts;
+    [Parameter]
+    public string Category { get; set; }
+
+    private List<Product> ProductList = new List<Product>();
 
     protected override async Task OnInitializedAsync()
     {
-        await Task.Delay(500);
-        filteredProducts = await ProductService.GetProductsAsync();
+        ProductList = await ProductService.GetProductsAsync(Category);
     }
 
-    private void ApplyFilters()
+    void NavigateToProductDetails(int productId)
     {
-        filteredProducts = filteredProducts
-            .Where(p => p.Category.Contains(typeFilter) && p.Price >= minPriceFilter && p.Price <= maxPriceFilter)
-            .ToList();
+        NavigationManager.NavigateTo($"/product/{productId}");
     }
 }
+
+<style>
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .product-item {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item h4 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-item p {
+            font-size: 14px;
+            color: #666;
+        }
+</style>

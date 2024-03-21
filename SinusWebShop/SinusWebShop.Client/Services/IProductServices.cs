@@ -2,9 +2,8 @@
 {
     public interface IProductService
     {
-        Task<List<Product>> GetProductsAsync();
+        Task<List<Product>> GetProductsAsync(string category);
         Task<List<Product>> GetAllProductsAsync();
         Task<Product> GetProductByIdAsync(int productId);
     }
-
 }

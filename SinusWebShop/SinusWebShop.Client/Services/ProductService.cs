@@ -12,6 +12,24 @@ namespace SinusWebShop.Client.Services
             _httpClient.BaseAddress = new Uri("https://dummyjson.com/");
         }
 
+        public async Task<List<Product>> GetProductsAsync(string category)
+        {
+            var response = await _httpClient.GetAsync($"products/category/{category}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var productJson = await response.Content.ReadAsStringAsync();
+                var products = JsonConvert.DeserializeObject<Root>(productJson);
+
+                return products.Products;
+            }
+            else
+            {
+                Console.WriteLine($"Failed to get products: {response.StatusCode}");
+                return null;
+            }
+        }
+
         public Task<List<Product>> GetAllProductsAsync()
         {
             throw new NotImplementedException();
@@ -21,50 +39,5 @@ namespace SinusWebShop.Client.Services
         {
             throw new NotImplementedException();
         }
-
-        public async Task<List<Product>> GetProductsAsync()
-        {
-            var response = await _httpClient.GetAsync("products");
-
-            if (response.IsSuccessStatusCode)
-            {
-                var productJson = await response.Content.ReadAsStringAsync();
-                var products = JsonConvert.DeserializeObject<Root>(productJson);
-
-                List<Product> myProducts = products.Products;
-
-
-                return myProducts;
-            }
-            else
-            {
-                Console.WriteLine($"Failed to get products: {response.StatusCode}");
-                return null;
-            }
-        }
-
-        //public async Task<List<Product>> GetAllProductsAsync()
-        //{
-        //    return await GetProductsAsync();
-        //}
-
-        //public async Task<Product> GetProductByIdAsync(int productId)
-        //{
-        //    var response = await _httpClient.GetAsync($"/products/{productId}");
-
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        var productJson = await response.Content.ReadAsStringAsync();
-        //        var product = JsonSerializer.Deserialize<Product>(productJson);
-        //        return product;
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine($"Failed to get product with ID {productId}: {response.StatusCode}");
-        //        return null;
-        //    }
-        //}
-
-
     }
 }
