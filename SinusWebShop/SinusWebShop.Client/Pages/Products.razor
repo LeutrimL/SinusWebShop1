@@ -10,7 +10,8 @@
 
 <p>
     Typfilter: <input @bind="typeFilter" type="text" />
-    Prisfilter: <input @bind="priceFilter" type="number" step="0.01" />
+    Minsta pris: <input @bind="minPriceFilter" type="number" step="0.01" />
+    Högsta pris: <input @bind="maxPriceFilter" type="number" step="0.01" />
     <button @onclick="ApplyFilters">Tillämpa filter</button>
 </p>
 
@@ -23,20 +24,20 @@ else
     <table class='table'>
         <thead>
             <tr>
+                <th>Kategori</th>
                 <th>Titel</th>
                 <th>Beskrivning</th>
                 <th>Pris</th>
-                <th>Kategori</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var product in filteredProducts)
             {
                 <tr>
+                    <td>@product.Category</td>
                     <td>@product.Title</td>
                     <td>@product.Description</td>
                     <td>@product.Price</td>
-                    <td>@product.Category</td>
                 </tr>
             }
         </tbody>
@@ -45,7 +46,8 @@ else
 
 @code {
     private string typeFilter;
-    private decimal priceFilter;
+    private decimal minPriceFilter;
+    private decimal maxPriceFilter;
     private List<Product> filteredProducts;
 
     protected override async Task OnInitializedAsync()
@@ -57,7 +59,7 @@ else
     private void ApplyFilters()
     {
         filteredProducts = filteredProducts
-            .Where(p => p.Category.Contains(typeFilter) && p.Price <= priceFilter)
+            .Where(p => p.Category.Contains(typeFilter) && p.Price >= minPriceFilter && p.Price <= maxPriceFilter)
             .ToList();
     }
 }

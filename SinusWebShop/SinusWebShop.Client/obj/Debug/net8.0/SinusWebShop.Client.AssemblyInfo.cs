@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SinusWebShop.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd7736e958392dd05ad2b879a2f71404a7c9f3aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+984578322b041f759eaddd930eb478b570748bd3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SinusWebShop.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SinusWebShop.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

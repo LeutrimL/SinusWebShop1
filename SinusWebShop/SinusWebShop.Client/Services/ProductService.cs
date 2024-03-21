@@ -1,4 +1,4 @@
-﻿using System.Text.Json;
+﻿using Newtonsoft.Json;
 
 namespace SinusWebShop.Client.Services
 {
@@ -9,18 +9,32 @@ namespace SinusWebShop.Client.Services
         public ProductService(HttpClient httpClient)
         {
             _httpClient = httpClient;
-            _httpClient.BaseAddress = new Uri("https://dummyjson.com/products");
+            _httpClient.BaseAddress = new Uri("https://dummyjson.com/");
+        }
+
+        public Task<List<Product>> GetAllProductsAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Product> GetProductByIdAsync(int productId)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<List<Product>> GetProductsAsync()
         {
-            var response = await _httpClient.GetAsync("/products");
+            var response = await _httpClient.GetAsync("products");
 
             if (response.IsSuccessStatusCode)
             {
                 var productJson = await response.Content.ReadAsStringAsync();
-                var productResponse = JsonSerializer.Deserialize<ProductResponse>(productJson);
-                return productResponse.Products;
+                var products = JsonConvert.DeserializeObject<Root>(productJson);
+
+                List<Product> myProducts = products.Products;
+
+
+                return myProducts;
             }
             else
             {
@@ -29,28 +43,27 @@ namespace SinusWebShop.Client.Services
             }
         }
 
-        public async Task<List<Product>> GetAllProductsAsync()
-        {
-            return await GetProductsAsync();
-        }
+        //public async Task<List<Product>> GetAllProductsAsync()
+        //{
+        //    return await GetProductsAsync();
+        //}
 
-        public async Task<Product> GetProductByIdAsync(int productId)
-        {
-            var response = await _httpClient.GetAsync($"/products/{productId}");
+        //public async Task<Product> GetProductByIdAsync(int productId)
+        //{
+        //    var response = await _httpClient.GetAsync($"/products/{productId}");
 
-            if (response.IsSuccessStatusCode)
-            {
-                var productJson = await response.Content.ReadAsStringAsync();
-                var product = JsonSerializer.Deserialize<Product>(productJson);
-                return product;
-            }
-            else
-            {
-                Console.WriteLine($"Failed to get product with ID {productId}: {response.StatusCode}");
-                return null;
-            }
-        }
-
+        //    if (response.IsSuccessStatusCode)
+        //    {
+        //        var productJson = await response.Content.ReadAsStringAsync();
+        //        var product = JsonSerializer.Deserialize<Product>(productJson);
+        //        return product;
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine($"Failed to get product with ID {productId}: {response.StatusCode}");
+        //        return null;
+        //    }
+        //}
 
 
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vrCD+taKoLFBQ/nZnTtdmVHx4Gg7COAr+OyPaaw+mR8=",
+  "Hash": "jESFbyh3fbbZTBl8oPHYntaj7hR98gxFaMoc/mS+MgA=",
   "Source": "SinusWebShop",
   "BasePath": "_content/SinusWebShop",
   "Mode": "Default",
@@ -794,6 +794,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\obj\\Debug\\net8.0\\webcil\\netstandard.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Newtonsoft.Json.wasm",
+      "SourceId": "SinusWebShop.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\obj\\Debug\\net8.0\\webcil\\Newtonsoft.Json.wasm"
     },
     {
       "Identity": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\SinusWebShop.Client.pdb",
@@ -4803,6 +4822,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Text.RegularExpressions.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\obj\\Debug\\net8.0\\compressed\\a4cl23e9e8.gz",
+      "SourceId": "SinusWebShop.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Newtonsoft.Json.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Newtonsoft.Json.wasm"
     },
     {
       "Identity": "C:\\Users\\Gentrit Limani\\Desktop\\Systemutveckling\\SinusWebShop\\SinusWebShop\\SinusWebShop.Client\\obj\\Debug\\net8.0\\compressed\\adqz8jalfy.gz",

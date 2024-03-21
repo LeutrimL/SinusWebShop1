@@ -38,6 +38,7 @@ C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\Sinus
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Win32.Registry.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\mscorlib.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\netstandard.wasm
+C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\Newtonsoft.Json.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\SinusWebShop.Client.pdb
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\SinusWebShop.Client.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\System.AppContext.wasm
@@ -249,6 +250,7 @@ C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\Sinus
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\System.IO.FileSystem.DriveInfo.wasm.gz
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\System.Security.Cryptography.OpenSsl.wasm.gz
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\System.Text.RegularExpressions.wasm.gz
+C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\Newtonsoft.Json.wasm.gz
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\System.Core.wasm.gz
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Components.WebAssembly.wasm.gz
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\wwwroot\_framework\System.Buffers.wasm.gz
@@ -431,6 +433,7 @@ C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\Sinus
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\Microsoft.JSInterop.dll
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\Microsoft.CSharp.dll
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\bin\Debug\net8.0\Microsoft.VisualBasic.Core.dll
@@ -615,6 +618,7 @@ C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\Sinus
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\SinusWebShop.Client.AssemblyInfo.cs
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\SinusWebShop.Client.csproj.CoreCompileInputs.cache
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\SinusWebShop.Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\SinusWebShop.Client.sourcelink.json
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Authorization.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.Forms.wasm
@@ -637,6 +641,7 @@ C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\Sinus
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\webcil\Microsoft.Extensions.Primitives.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\webcil\Microsoft.JSInterop.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\webcil\Microsoft.JSInterop.WebAssembly.wasm
+C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\webcil\Newtonsoft.Json.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\webcil\System.IO.Pipelines.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\webcil\Microsoft.CSharp.wasm
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\webcil\Microsoft.VisualBasic.Core.wasm
@@ -840,6 +845,7 @@ C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\Sinus
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\compressed\yazfyno3x4.gz
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\compressed\2jkr4lb46i.gz
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\compressed\rbfo24jnr2.gz
+C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\compressed\a4cl23e9e8.gz
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\compressed\lshmqvmxsg.gz
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\compressed\mv4fylstlj.gz
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\compressed\hs4f9w0kdo.gz
@@ -1026,4 +1032,3 @@ C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\Sinus
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\refint\SinusWebShop.Client.dll
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\SinusWebShop.Client.pdb
 C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\ref\SinusWebShop.Client.dll
-C:\Users\Gentrit Limani\Desktop\Systemutveckling\SinusWebShop\SinusWebShop\SinusWebShop.Client\obj\Debug\net8.0\SinusWebShop.Client.sourcelink.json
