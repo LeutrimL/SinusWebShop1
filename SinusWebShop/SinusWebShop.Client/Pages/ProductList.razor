@@ -1,0 +1,39 @@
+﻿@page "/products/{category}"
+
+@using SinusWebShop.Client.Models
+@using SinusWebShop.Client.Services
+@inject NavigationManager NavigationManager
+@inject ProductService ProductService
+
+
+<h3>Produkter i @Category</h3>
+
+<div class="product-grid">
+    @foreach (var productItem in Products)
+    {
+        <div class="product-item">
+            <img src="@productItem.Thumbnail" alt="@productItem.Title" />
+            <h4>@productItem.Title</h4>
+            <p>@productItem.Description</p>
+            <p>Pris: @productItem.Price kr</p>
+            <button @onclick="() => NavigateToProductDetails(productItem.Id ?? 0)">Visa detaljer</button> <!-- Här hanteras nullvärdet -->
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string Category { get; set; }
+
+    private List<Product> Products = new List<Product>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Products = await ProductService.GetProductsAsync(Category);
+    }
+
+    void NavigateToProductDetails(int productId)
+    {
+        NavigationManager.NavigateTo($"/product/{productId}");
+    }
+}

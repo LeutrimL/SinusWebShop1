@@ -1,8 +1,60 @@
 ﻿@page "/Cart"
-
+@using SinusWebShop.Client.Services
+@inject ShoppingCartService ShoppingCartService
+@inject NavigationManager NavigationManager
 
 <h3>Cart</h3>
 
-@code {
+<div class="cart-items">
+    @if (ShoppingCartService.CartItems.Count == 0)
+    {
+        <p>Your cart is empty.</p>
+    }
+    else
+    {
+        @foreach (var item in ShoppingCartService.CartItems)
+        {
+            <div class="cart-item">
+                <img src="@item.Product.Thumbnail" alt="@item.Product.Title" />
+                <h4>@item.Product.Title</h4>
+                <p>@item.Product.Description</p>
+                <p>Price: @item.Product.Price kr</p>
+            </div>
+        }
+    }
+</div>
 
+<div class="cart-actions">
+    @if (ShoppingCartService.CartItems.Count > 0)
+    {
+        <button @onclick="Checkout">Checkout</button>
+    }
+</div>
+
+@if (isOrderConfirmed)
+{
+    <div class="order-confirmation">
+        <h3>Order Confirmation</h3>
+        <p>Your order has been placed. Thank you for your purchase!</p>
+    </div>
+}
+
+@code {
+    private bool isOrderConfirmed = false;
+
+    private async Task Checkout()
+    {
+        if (ShoppingCartService.CartItems.Count == 0)
+        {
+            return;
+        }
+
+        isOrderConfirmed = true;
+
+        await Task.Delay(5000);
+
+        isOrderConfirmed = false;
+
+        ShoppingCartService.CartItems.Clear();
+    }
 }

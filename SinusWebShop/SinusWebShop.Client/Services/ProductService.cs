@@ -8,7 +8,7 @@ namespace SinusWebShop.Client.Services
 
         public ProductService(HttpClient httpClient)
         {
-            _httpClient = httpClient;
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
             _httpClient.BaseAddress = new Uri("https://dummyjson.com/");
         }
 
@@ -19,9 +19,8 @@ namespace SinusWebShop.Client.Services
             if (response.IsSuccessStatusCode)
             {
                 var productJson = await response.Content.ReadAsStringAsync();
-                var products = JsonConvert.DeserializeObject<Root>(productJson);
-
-                return products.Products;
+                var products = JsonConvert.DeserializeObject<List<Product>>(productJson);
+                return products;
             }
             else
             {
@@ -30,14 +29,38 @@ namespace SinusWebShop.Client.Services
             }
         }
 
-        public Task<List<Product>> GetAllProductsAsync()
+        public async Task<List<Product>> GetAllProductsAsync()
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.GetAsync("products/all");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var productJson = await response.Content.ReadAsStringAsync();
+                var products = JsonConvert.DeserializeObject<List<Product>>(productJson);
+                return products;
+            }
+            else
+            {
+                Console.WriteLine($"Failed to get all products: {response.StatusCode}");
+                return null;
+            }
         }
 
-        public Task<Product> GetProductByIdAsync(int productId)
+        public async Task<Product> GetProductByIdAsync(int productId)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.GetAsync($"products/{productId}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var productJson = await response.Content.ReadAsStringAsync();
+                var product = JsonConvert.DeserializeObject<Product>(productJson);
+                return product;
+            }
+            else
+            {
+                Console.WriteLine($"Failed to get product with ID {productId}: {response.StatusCode}");
+                return null;
+            }
         }
     }
 }

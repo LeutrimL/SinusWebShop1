@@ -1,0 +1,12 @@
+﻿@layout MyServerLayout
+
+<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" />
+    </Found>
+    <NotFound>
+        <LayoutView Layout="@typeof(MyServerLayout)">
+            <p>Sidan kunde inte hittas.</p>
+        </LayoutView>
+    </NotFound>
+</Router>
